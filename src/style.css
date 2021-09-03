@@ -5,6 +5,70 @@
   --background-top-bar: #192850;
 }
 
+.share-icons {
+  position: relative;
+  display: flex;
+  cursor: pointer; 
+  list-style-type: none;  
+  width: 380px; 
+  padding: 0px; 
+  margin: 0px;
+  height: 50px;
+  justify-content: center;
+}
+.share-icons__block {
+  position: absolute;
+  left: 0px;
+}
+.share-icons__block-left,
+.share-icons__block-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  background-color: none;
+  color: white;
+  font-size: 30px;
+  transition: 0.6s;
+}
+
+
+.share-icons__block-left {
+  clip-path: inset(0 30% 0 0);
+}
+
+.share-icons__block-right {
+  margin-left: 30px;
+  clip-path: inset(0 0 0 40%);
+}
+
+
+.share-icons:hover .share-icons__block-left {
+  transform: translateX(-50%) scale(1.2);
+}
+
+.share-icons:hover .share-icons__block-right {
+  transform: translateX(50%) scale(1.2);
+}
+
+.footer-contact a {
+  color: #fff;
+  display: inline-block;
+  opacity: 0;
+  height: 50px;
+  margin: 0;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 1.5s;
+  text-shadow: 4px 4px 8px var(--text-color);
+}
+
 html {
   --imp-text-color: var(--text-color);
   overflow-x: hidden;
@@ -15,7 +79,7 @@ html {
 }
 
 /* --------- */
-/*Scrollbar   */
+/* Scrollbar */
 /* --------- */
 
 ::-webkit-scrollbar {
@@ -393,7 +457,7 @@ html {
   text-align: center !important;
 }
 
-.footer-body {
+.footer-contact {
   text-align: center !important;
 }
 
@@ -402,7 +466,7 @@ html {
     text-align: center !important;
   }
 
-  .footer-body {
+  .footer-contact {
     text-align: center !important;
   }
 }
@@ -412,11 +476,6 @@ html {
   color: white !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
-}
-.footer-icons {
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
-  padding: 0 !important;
 }
 
 .footer-signature {

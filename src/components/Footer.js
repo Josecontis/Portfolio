@@ -1,10 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -18,37 +13,12 @@ function Footer() {
         <Col md="4" className="footer-copyright">
           <h3>Copyright © {year} <div className="footer-signature">GC</div></h3>
         </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/Josecontis"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/giuseppe-conticchio-01a414159/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
+        <Col md="4" className="footer-contact">
+          <ul class="share-icons">
+            <h3><a href="/contacts">Have a question or want to work together?</a></h3>
+            <li class="share-icons__block">
+              <div class="share-icons__block-left">&#60;</div>
+              <div class="share-icons__block-right">&#47;&#62;</div>
             </li>
           </ul>
         </Col>

@@ -6,7 +6,7 @@ import logo from "../Assets/header-logo.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { CgHeadset } from "react-icons/cg";
+import { CgHeadset, CgCoffee } from "react-icons/cg";
 
 import {
   AiFillStar,
@@ -96,6 +96,17 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+           
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contacts"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgCoffee style={{ marginBottom: "2px" }} /> Contacts
+              </Nav.Link>
+            </Nav.Item> 
+            
             <Nav.Item>
               <Nav.Link
                 target="_blank"
@@ -109,6 +120,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
@@ -119,6 +131,7 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -31,7 +31,7 @@ function AboutCard() {
           <p className="about-phrase">
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Giuseppe</footer>
         </blockquote>
       </Card.Body>
     </Card>
